@@ -1,0 +1,752 @@
+@charset "utf-8";
+/* CSS Document */
+.body{
+  background: url("../img/04.png");
+ 
+background-position: 60% 80%;
+  background-attachment: fixed;
+  
+}
+.rogo{
+   
+  position: relative;
+  text-align: center;
+  right: 6%;
+  margin-top: 20px;
+  z-index: 999;
+}
+.rogo img{
+  position: fixed;
+  width: 15%;
+}
+.rogo_mobile{
+display: none;
+}
+.opacity{
+  opacity: 0.6;
+}
+@media(max-width:950px){
+  .rogo{
+    display: none;
+  }
+ .rogo_mobile{
+   display: block;
+  position: relative;
+  text-align: center;
+  right: 70px;
+  margin-top: 70px;
+  z-index: 999;
+}
+.rogo_mobile img{
+  position: fixed;
+  width: 130px;
+}
+}
+.rogo2 {
+  right: 2%;
+  top: 3%;
+  position: fixed;
+       
+    font-weight: 200;
+    margin-top: 8px;
+    text-align: right;
+    color: #C75A81;
+      font-family: dunhill-script, sans-serif;
+    font-style: normal;
+    font-size: 0.7rem;
+
+}
+.rogo2 span{
+font-family: none;
+  
+  font-size: 0.5rem;
+}
+button{
+  border: none;
+  background: none;
+}
+@media (max-width: 950px){
+.rogo2 {
+ top: 92%;
+    position: fixed;
+    padding-left: 18px;
+    z-index: 2;
+    right: auto;
+    font-size: 1.7vw;
+    width: 100%;
+    background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
+    height: 5%;
+    padding-top: 20px;
+    text-align: left;
+}
+.rogo2 h3 {
+    text-align: left;
+    font-size: 1rem;
+}
+  .rogo2 h4 {
+    display: none;
+}
+
+}
+
+@media (min-width: 950px){
+.openbtn1 {
+    display: none;
+  }}
+.background {
+    width: 100%;
+    height: 73px;
+    background: linear-gradient(rgba(255,255,255,0.5), #fff);
+    position: fixed;
+    top: 92%;
+    z-index: 100;
+}
+@media (min-width: 950px){
+.background {
+    display: none;
+  }
+
+}
+.header{
+  position: fixed;
+    padding-top: 13%;
+}
+.gnavi__wrap {
+        width: 120px;
+    margin-left: 80px;
+}     
+
+.gnavi__list {
+       width: 30%;
+    height: 50px;
+    position: relative;
+    transition: all .3s;
+    list-style: none;
+}
+
+.gnavi__list:hover {
+    
+}
+
+.gnavi__list:hover::before {
+    
+}
+.gnavi__list a {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    padding: 0 20px;
+    transition: all .3s;
+    border-left: solid 1px #333;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.gnavi__list:hover a {
+    color: #C75A81;
+}
+
+
+
+.dropdown__lists {
+    opacity: 0;/*デフォルトでは非表示の状態にしておく*/
+    
+    position: absolute ;
+    top: 50px ;
+    left: 0;
+  transition: all .3s;/*表示の変化を0.3秒に指定*/
+  width: 160px;
+}
+.gnavi__list:hover .dropdown__lists {
+    opacity: 1;/*Gナビメニューにホバーしたら表示*/
+}
+.dropdown__list {
+   list-style: none;
+    height: 60px;
+    transition: all .3s;
+    position: relative;
+}
+
+
+.dropdown__list a::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #C75A81;
+    border-left: 2px solid #C75A81;
+    transform: rotate(135deg);
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 5px);
+}
+
+.dropdown__list a {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333 !important;
+    text-decoration: none;
+    position: relative;
+    width: 100px;
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Zen Maru Gothic', serif;
+}
+
+
+
+
+
+
+.dropdown__list:hover {
+   background:rgba(199,90,129,0.2);
+}
+.menu {
+   font-size: 2rem;
+    text-align: center;
+    width: 290px;
+    font-family: dunhill-script, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #C75A81;
+
+}
+.border{
+    position: absolute;
+    left: 5%;
+    top: 24%;
+    background: #000000;
+    width: 1px;
+    height: 34%
+}
+
+.paragraph img{
+  width: 33vw;
+   transform:rotate(90deg);
+    position: absolute;
+  right: -8%;
+  top:35%;
+}
+.link-solid {
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+@media (max-width:950px){
+  .menu{
+    display: none;
+  }
+  .contact_kozinn{
+  padding: 0 !important;
+    margin: 50px 5% 5% !important;
+  }
+  .contact-form{
+      padding: 0 !important;
+    margin: 120px 5% 100px !important;
+  }
+  .goirai_flow{
+      padding: 0 !important;
+    margin: 200px 5% 5% !important;
+  }
+  .flow_number{
+
+  min-width:90px !important;
+
+  
+}
+  
+  .dropdown__list a::before {
+    display: none;
+  }
+  .dropdown__lists{
+    opacity: 1;
+        top: 0px;
+  }
+  .gnavi__wrap {
+    width: 120px;
+    margin-left: 0px ;
+}
+  #g-nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    
+    /*ナビのスタート位置と形状*/
+  opacity: 0;
+    left:0;
+  width:100%;
+    height: 100vh;/*ナビの高さ*/
+  background:rgba(199,90,129,0.8);
+    /*動き*/
+  transition: all 1.3s;
+  text-align: center;
+  z-index: 2;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive{
+    opacity: 1;
+  top:0;
+}
+
+
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999; 
+    width: 100%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+.gnavi__lists {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+ 
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+ 
+  list-style: none;
+   
+ 
+}
+
+.gnavi__lists a{
+  color: #fff;
+  text-decoration: none;
+ 
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  border-left: none;
+}
+  .dropdown__list a{
+    color: #fff !important;
+    margin-left: 15px;
+  }
+.openbtn1{
+ position: fixed;
+    z-index: 3;
+    top: 93%;
+    cursor: pointer;
+    /* width: 100%; */
+    height: 56px;
+    right: 75px;
+    
+ 
+}
+  
+/*×に変化*/  
+.openbtn1 span{
+      display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #666;
+    width: 50px;
+    z-index: 1000;
+    margin-left: 40%;
+  }
+
+.openbtn1 span:nth-of-type(1) {
+  top:15px; 
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top:23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top:31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+top: 18px;
+    /* left: 18px; */
+    transform: translateY(5px) rotate(-25deg);
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3){
+     top: 30px;
+    /* left: 18px; */
+    transform: translateY(-7px) rotate(25deg);
+}
+   .dropdown__lists {
+    display: block !important;
+   transform:none !important;
+         margin-top: 50px;
+}
+ .snsbtniti {
+   display: none !important;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+   margin-top: 0 !important;
+  }
+  .snsbtniti img{
+    width: 33px;
+  }
+  .youtube-btn {
+    width: 40px !important;
+}
+  .snsbtniti-mobile{
+    display: block !important;
+    margin-top: 75vh;
+    margin-left: 15px;
+  }
+  .snsbtniti-mobile li{
+    text-align: left;
+  }
+  .snsbtniti-mobile img{
+    width: 40px;
+  }
+  .link{
+    display: flex;
+  }
+}
+.snsbtniti{
+    display: flex;
+    margin-top: 70%;
+    list-style: none;
+  padding-left: 25%;
+}
+
+  
+.snsbtniti li{
+  padding-left: 20px;
+}
+.snsbtniti li:nth-child(3){
+  vertical-align: middle;
+}
+/* ボタン全体 */
+.flowbtn17 {
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .5s;
+  
+  margin-left: 20px;
+  
+}
+/* ボタンマウスホバー時のテキスト指定 */
+.flowbtn17:hover{
+text-decoration:none;
+}
+/* アイコンをど真ん中に */
+.flowbtn17 i{
+position:absolute;
+top:50%;
+left:50%;
+-ms-transform:translate(-50%,-50%);
+-webkit-transform:translate(-50%,-50%);
+transform:translate(-50%,-50%);
+}
+ .fl_yu2 {
+  margin-top: 5px;
+   margin-left: 25px;
+}
+.snsbtniti-mobile li {
+    margin-bottom: 20px;
+}
+.snsbtniti-mobile {
+  display: none;
+}
+/* ulタグの内側余白を０にする */
+ul.snsbtniti2{
+padding:0!important;
+}
+/* ボタン全体の位置 */
+.snsbtniti2{
+display:flex;
+flex-flow:row wrap;
+}
+/* ボタン同士の余白 */
+.snsbtniti2 li{
+flex:0 0 48%;
+text-align:center !important;
+}
+
+.contact-top_img{
+ text-align: center;
+ 
+}
+.contact-top_img img{
+  width: 28%;
+  margin-top: 15%;
+  filter: drop-shadow(10px 10px 5px rgba(160, 160, 160, 0.8));
+}
+@media(max-width:950px){
+  .contact-top_img img {
+      width: 45%;
+    z-index: -1;
+    position: relative;
+        margin-top: 20%;
+}
+    .paragraph{
+    margin-top: 22%;
+    position: static;
+    text-align: center;
+  }
+  .paragraph img{
+    transform: none !important;
+    width: 50vw !important;
+    right: 25%;
+    top: 10%;
+    z-index: -1;
+  }
+}
+.contact_kozinn{
+    margin: 0 auto;
+  padding-top: 5%;
+  padding-right: 15%;
+  padding-left: 25%
+}
+.contact_kozinn p{
+  line-height: 2rem;
+  font-family: 'Zen Maru Gothic', serif;
+}
+
+
+.flow h3{
+  font-size: 1.2rem;
+  margin-right: 15px;
+  margin-bottom: 45px;
+  font-family: 'Zen Maru Gothic', serif;
+}
+.flow span{
+  font-size: 1rem;
+  color: #C75A81;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact h2{
+  font-size: 1.2rem;
+  margin-right: 15px;
+  margin-bottom: 45px;
+  font-family: 'Zen Maru Gothic', serif;
+}
+.contact span{
+  font-size: 1rem;
+  color: #C75A81;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.goirai_flow{
+    margin: 0 auto;
+  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-right: 15%;
+  padding-left: 25%;
+ 
+}
+.goirai_flow ol{
+   list-style: none;
+}
+.goirai_flow li{
+  display: flex;
+  
+  
+  font-family: 'Zen Maru Gothic', serif;
+}
+.goirai_flow ol :nth-child(5){
+  border-bottom: none;
+}
+.flow_number{
+  border: solid 1px #333;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 90px;
+  margin-right: 30px;
+  font-weight: 500;
+}
+.goirai_flow li h2{
+  padding-bottom: 20px;
+}
+.detail{
+     width: 500px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  margin-bottom: 40px;
+ 
+    border-bottom: dotted #333 2px;
+}
+.detail p{
+  line-height: 1.5rem;
+}
+.dotted-line{
+  border-bottom: 3px dotted #333;
+  margin-bottom: 60px;
+}
+.contact-form{
+      margin: 0 auto;
+  padding-bottom: 8%;
+  padding-right: 17%;
+  padding-left: 28%;
+}
+
+.item{
+  overflow: hidden;
+  margin-bottom: 40px;
+    flex-direction: column;
+display: flex;
+  
+
+}
+.label{
+  margin-bottom: 15px;
+  font-family: 'Zen Maru Gothic', serif;
+}
+
+
+input[type="text"],
+input[type="email"]{
+  height: 40px;
+  background:rgba(199,90,129,0.3);
+  border: none;
+  padding: 6px 16px;
+}
+textarea{
+  height: 150px;
+  background:rgba(199,90,129,0.3);
+  border: none;
+  padding: 16px 16px;
+}
+.btn{
+ text-align: center; 
+}
+.btn-confirmation{
+  margin-top: 100px;
+  padding: 10px 75px;
+ background:rgba(199,90,129,0.3);
+  border: none;
+
+  
+}
+.footer{
+  font-size: 0.8rem;
+  color: #C75A81;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  height: 80px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.footer div{
+  padding-top: 40px;
+ 
+}
+
+.gnavi__wrap_hamburger {
+  position: relative;
+}
+
+@media screen and (max-width: 950px) {
+  .c-hamburger-menu__list {
+    background-color: #eeeeee; /* カスタマイズしてください */
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    padding: 2rem; /* カスタマイズしてください */
+    position: absolute;
+    transform: translateX(-100%);
+    transition: 0.3s; /* カスタマイズしてください */
+    top: 100%;
+    width: 100%;
+  }
+  #hamburger:checked ~ .c-hamburger-menu__list {
+    transform: translateX(0%);
+    transition: 0.3s;
+  }
+}
+.c-hamburger-menu__input {
+  display: none;
+}
+.c-hamburger-menu__bg {
+  background-color: #000; /* カスタマイズしてください */
+  cursor: pointer;
+  display: none !important;
+  height: 100vh;
+  left: 0;
+  opacity: 0.4; /* カスタマイズしてください */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+#hamburger:checked ~ .c-hamburger-menu__bg {
+  display: block;
+}
+.c-hamburger-menu__button {
+  display: none;
+}
+@media screen and (max-width: 950px) {
+  .c-hamburger-menu__button {
+    align-items: center;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* カスタマイズしてください */
+    height: 32px; /* カスタマイズしてください */
+    justify-content: center;
+    width: 32px; /* カスタマイズしてください */
+  }
+}
+.c-hamburger-menu__button-mark {
+  background-color: #000; /* カスタマイズしてください */
+  display: block;
+  height: 1px; /* カスタマイズしてください */
+  transition: 0.3s; /* カスタマイズしてください */
+  width: 20px; /* カスタマイズしてください */
+}
+@media screen and (max-width: 950px) {
+  #hamburger:checked
+    ~ .c-hamburger-menu__button
+    .c-hamburger-menu__button-mark:nth-of-type(1) {
+    transform: translate(2px, 1px) rotate(45deg); /* カスタマイズしてください */
+    transform-origin: 0%; /* カスタマイズしてください */
+  }
+  #hamburger:checked
+    ~ .c-hamburger-menu__button
+    .c-hamburger-menu__button-mark:nth-of-type(2) {
+    opacity: 0;
+  }
+  #hamburger:checked
+    ~ .c-hamburger-menu__button
+    .c-hamburger-menu__button-mark:nth-of-type(3) {
+    transform: translate(2px, 3px) rotate(-45deg); /* カスタマイズしてください */
+    transform-origin: 0%; /* カスタマイズしてください */
+  }
+}
+
+
+
+
